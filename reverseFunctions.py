@@ -2,14 +2,14 @@
 #Reverse a List or a String using concatenation (my favorite method so far)
 
 text="My country 'tis of thee!"
+print ("Here is some text: ", text)
 
 textList = text.split(" ")#turn string into a List
-print (textList)
-
+print ("Text as list: ", textList)
 
 myList = [1,12,24,"sing",42,56,73,89,99,201,101]
 l = myList[:] #make a copy of original list
-print (l)
+print ("List of stuff: ", l)
 
 #reverseList
 #Takes a list and reverses it
@@ -20,6 +20,7 @@ def reverseList(myList):
 		addList=[myList[i]]
 		newList = addList + newList
 	return (newList)
+	
 #reverseString
 #Takes a string and reverses it
 #using concatenation
@@ -28,16 +29,15 @@ def reverseString(myString):
 	for i in range (len(myString)):
 		newString = myString[i]+newString
 	return (newString)
-	
+
 l = reverseList(l)
-print (l)
+print ("Reverse list: ", l)
 
 newTextList = reverseList(textList)
-print (newTextList)
+print ("Reverse text as a list: ", newTextList)
 
-newTextString=" ".join(new)
-print (newTextString)
+newText=" ".join(newTextList)
+print ("Reverse text as a string: ", newText)
 
-print (text)
 reverseText = reverseString(text)
-print (reverseText)
+print ("Reverse entire text string: ", reverseText)
