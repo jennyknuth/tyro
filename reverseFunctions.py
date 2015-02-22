@@ -1,7 +1,9 @@
-#reverse a list with concatenation
+#Some of my first functions
+#Reverse a List or a String using concatenation (my favorite method so far)
 
 text="My country 'tis of thee!"
-textList = text.split(" ")
+
+textList = text.split(" ")#turn string into a List
 print (textList)
 
 
@@ -18,7 +20,9 @@ def reverseList(myList):
 		addList=[myList[i]]
 		newList = addList + newList
 	return (newList)
-	
+#reverseString
+#Takes a string and reverses it
+#using concatenation
 def reverseString(myString):
 	newString = ""
 	for i in range (len(myString)):
@@ -28,11 +32,11 @@ def reverseString(myString):
 l = reverseList(l)
 print (l)
 
-new = reverseList(textList)
-print (new)
+newTextList = reverseList(textList)
+print (newTextList)
 
-newText=" ".join(new)
-print (newText)
+newTextString=" ".join(new)
+print (newTextString)
 
 print (text)
 reverseText = reverseString(text)
