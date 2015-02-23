@@ -23,8 +23,8 @@ string = "The quick brown fox jumped over the lazy dog."
 #string for it, and so on
 #Except this method doesn't really do that
 #what this does is find the first location of a character in the string
-#and map it to an array
-#If the location of the character is less than the length of the array, it
+#and map it to a list
+#If the location of the character is less than the length of the list, it
 #has already been found and so it is a duplicate
 
 collection=[]
