@@ -17,7 +17,7 @@ while counter < 20:
 		break
 		
 #try it with string concatenation zz="Fizz" zz+="Buzz" print(counter, zz)
-print 
+print ()
 print 
 print ("using concatenation of strings")
 print		
@@ -29,12 +29,12 @@ zz = ""
 while index < 20:
     zz="Fizz"
     if index % 3 == 0 and index % 5==0:
-	zz += "Buzz"
-	print (zz)
+        zz += "Buzz"
+        print (zz)
     elif index % 3 == 0:
         print (zz)
     elif index % 5 == 0:
-	zz = "Buzz"
-	print (zz)
+        zz = "Buzz"
+        print (zz)
     print (index)
     index += 1

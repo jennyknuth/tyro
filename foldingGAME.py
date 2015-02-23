@@ -31,9 +31,10 @@ print (("The thickness after %s folds will be %.2fcm.") % (folds, totalthickness
 # through a loop and increment thickness by thickness each time
 # any other ways?
 print ()
-print ("Using a for loop to double values:")
+print ("Using a for-loop to double values:")
 #loop for powers of 2
 for i in range(1, (int(float(folds)+1))): #add 1 so it is inclusive of folds
 	#print ("thickness", thickness * (2**i)) #does not use pow function
 	thickness = thickness+thickness
 	print (thickness, "cm")
+print (("The thickness after %s folds will be %.2fcm.") % (folds, thickness)) 
